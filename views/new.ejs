@@ -5,5 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>New Message</title>
   </head>
-  <body></body>
+  <body>
+    <h1>New message form</h1>
+    <form method="POST" action="/new">
+      <label for="user">User</label>
+      <input type="text" name="user" id="user" />
+      <label for="message">Message</label>
+      <textarea name="message" id="message"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
 </html>
