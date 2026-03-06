@@ -11,7 +11,9 @@
   <ul>
     <% for (let i = messages.length -1; i >= 0; i--) { %>
       <li>
-       <%= messages[i].user + ": " + messages[i].text %> <br> <%= messages[i].added %> </li>
+       <%= messages[i].user + ": " + messages[i].text %> <br> <%= messages[i].added %> 
+    <a href= <%= i %>>Show Message</a>
+</li>
     <% } %>
   </ul>
 </body>
