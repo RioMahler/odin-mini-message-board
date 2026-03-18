@@ -7,6 +7,7 @@
   </head>
   <body>
     <h1>New message form</h1>
+    <%- include("partials/errors.ejs") %>
     <form method="POST" action="/new">
       <label for="username">User</label>
       <input type="text" name="username" id="username" />
