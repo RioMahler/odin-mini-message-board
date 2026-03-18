@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%= "Post " + post %></title>
+    <title><%= "Post " + post.id %></title>
   </head>
   <body>
     <p>
-      <%= post.user + ": " + post.text %> <br />
-      <%= post.added %>
+      <%= post.username + ": " + post.message %> <br />
+      <%= post.created_at %>
     </p>
   </body>
 </html>
