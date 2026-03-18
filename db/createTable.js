@@ -13,7 +13,11 @@ CREATE TABLE IF NOT EXISTS messages (
 async function populateDB() {
   console.log("seeding...");
   const client = new Client({
-    connectionString: process.env.HOST,
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    database: process.env.DB_NAME,
+    password: process.env.DB_PASSWORD,
+    port: Number(process.env.DB_PORT),
   });
   await client.connect();
   await client.query(SQL);
