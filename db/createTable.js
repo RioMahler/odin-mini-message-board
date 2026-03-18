@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS messages (
 );
 
 `;
-
+console.log("DB_HOST:", process.env.DB_HOST);
 async function populateDB() {
   console.log("seeding...");
   const client = new Client({
